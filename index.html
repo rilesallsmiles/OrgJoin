@@ -40,7 +40,7 @@ h1{font-size:clamp(42px,6vw,76px);letter-spacing:-.04em;line-height:1.02}h1 em{f
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.steps>div{border-top:2px solid var(--blue);padding-top:24px}
 .steps .n{font-size:13px;font-weight:600;color:var(--blue);margin-bottom:40px;display:block}.steps h3{font-size:26px;margin-bottom:14px}.steps p{margin:0;color:var(--mute)}
 .about{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:center}
-.about img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:3px;display:block}
+.about img{width:100%;aspect-ratio:1/1;object-fit:contain;object-position:center;background:var(--mist);border-radius:3px;display:block;max-width:380px;justify-self:start}
 .about p{font-size:18px;color:var(--mute);margin:0 0 18px;max-width:600px}.about .h2{margin-bottom:28px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}.chips span{border:1px solid var(--line);background:var(--mist);padding:6px 14px;font-size:13px;font-weight:500;color:var(--text);border-radius:3px}
 .close{background:var(--navy);color:#fff;padding:104px 0}.close h2{color:#fff;font-size:clamp(32px,4.6vw,58px);max-width:820px;margin-bottom:36px}
@@ -69,10 +69,21 @@ footer{background:var(--ink);border-top:1px solid #1D4548;color:#8FA9A8;font-siz
 @media(max-width:900px){.hero .w,.about{grid-template-columns:1fr;gap:48px}.rows>div{grid-template-columns:48px 1fr;gap:6px 16px}.rows>div p{grid-column:2}.steps{grid-template-columns:1fr;gap:36px}.steps .n{margin-bottom:18px}.links a:not(.btn){display:none}.sec{padding:72px 0}.hero{padding:64px 0}.about img{max-width:360px}.close{padding:72px 0}}
 
 .proof-intro{font-size:19px;color:var(--mute);max-width:760px;margin:-26px 0 38px}
-.proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
 .proof-grid article{padding:25px 0;border-top:2px solid var(--blue)}
 .proof-grid h3{font-size:25px;margin:12px 0}.proof-grid p{color:var(--mute);margin:0}
 .proof-tag{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+
+.proof-grid article{display:flex;flex-direction:column;gap:0}
+.proof-grid article h3{line-height:1.18;margin:14px 0 14px}
+.proof-grid article p{font-size:15px;line-height:1.65}
+.proof-evidence{border-top:1px solid var(--line);margin-top:auto;padding-top:20px}
+.proof-evidence-label{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--blue);margin-bottom:12px}
+.proof-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.proof-metric strong{display:block;font-size:clamp(21px,2.6vw,28px);line-height:1.2;letter-spacing:-.035em;color:var(--ink);overflow-wrap:anywhere}
+.proof-metric span{display:block;font-size:12px;line-height:1.4;color:var(--mute);margin-top:7px}
+.proof-grid article .proof-detail{margin-bottom:24px}
+@media(max-width:700px){.proof-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .proof-note{font-size:13px;color:var(--mute);margin:32px 0 0}
 .install-step{padding-left:18px!important;border-left:3px solid #E3A870}
 @media(max-width:700px){.proof-grid{grid-template-columns:1fr}.proof-intro{margin:-24px 0 24px}.w{padding:0 22px}h1{font-size:clamp(40px,10vw,62px)}}
@@ -129,14 +140,35 @@ footer{background:var(--ink);border-top:1px solid #1D4548;color:#8FA9A8;font-siz
 <section class="logos dark"><div class="w"><div class="lbl">Operating experience across</div><div class="row">
 <img alt="Newlab" decoding="async" height="121" loading="lazy" src="orgjoints-assets/newlab.png" style="height:24px;width:auto" width="600"/><img alt="Fictiv" decoding="async" height="119" loading="lazy" src="orgjoints-assets/fictiv.png" style="height:30px;width:auto;filter:grayscale(1) brightness(1.7)" width="341"/><img alt="Hexagon" decoding="async" height="142" loading="lazy" src="orgjoints-assets/hexagon.png" style="height:40px;width:auto" width="421"/><img alt="Hilti" decoding="async" height="72" loading="lazy" src="orgjoints-assets/hilti.png" style="height:22px;width:auto" width="348"/><img alt="Markforged" decoding="async" height="104" loading="lazy" src="orgjoints-assets/markforged.png" style="height:28px;width:auto" width="474"/>
 </div></div></section><div aria-hidden="true" class="joint up n" style="--a:#123C3F;--b:#fff;--c:#E3A870"></div><section class="sec experience" id="experience"><div class="w">
-<p class="eyebrow"><b>05</b> Experience &amp; perspective</p>
-<h2 class="h2">Built from operating inside complex businesses.</h2>
-<p class="proof-intro">My experience spans venture ecosystems, digital manufacturing, industrial technology, and commercial operations. The through-line is working where teams, workflows, and decisions need to function together.</p>
+<p class="eyebrow"><b>05</b> Selected operating work</p>
+<h2 class="h2">Making the connections work.</h2>
+<p class="proof-intro">Selected examples of organizational design, cross-functional transformation, and commercial operating systems built to turn complexity into execution.</p>
 <div class="proof-grid">
-<article><span class="proof-tag">Venture ecosystems</span><h3>Newlab</h3><p>Experience in environments where diverse stakeholders, programs, and operating priorities must connect.</p></article>
-<article><span class="proof-tag">Digital manufacturing</span><h3>Fictiv</h3><p>Experience with the commercial and operational interfaces required to serve customers in complex businesses.</p></article>
-<article><span class="proof-tag">Industrial &amp; enterprise</span><h3>Hexagon · Hilti</h3><p>Perspective from larger industrial organizations, where coordination and execution span functions and systems.</p></article>
-</div><p class="proof-note">These are summaries of operating environments, not claims of specific project outcomes. Detailed examples can be discussed directly.</p>
+<article>
+<span class="proof-tag">Venture ecosystems · Operating model &amp; organizational design</span>
+<h3>Moving decisions closer to the work.</h3>
+<p class="proof-detail">Designed a scalable operating model for a growing multi-market organization, defining decision authority, escalation pathways, accountability, and management rhythms. Selected elements were implemented to strengthen operating clarity and enable more distributed decision-making. Separately, rebuilt commercial pricing, renewal, and performance mechanisms.</p>
+<div class="proof-evidence"><span class="proof-evidence-label">Additional operating results</span><div class="proof-metrics"><div class="proof-metric"><strong>69.4% → 86.8%</strong><span>Private-office occupancy</span></div><div class="proof-metric"><strong>51.8% → 78.9%</strong><span>List-price attainment</span></div></div></div>
+</article>
+<article>
+<span class="proof-tag">Digital manufacturing · Cross-functional commercial operations</span>
+<h3>Connecting the functions that drive growth.</h3>
+<p class="proof-detail">Worked across Product, Sales, Marketing, Customer Success, and Operations to align customer segmentation, positioning, lifecycle programs, and performance measurement with commercial priorities. Supported data-informed, coordinated go-to-market execution.</p>
+<div class="proof-evidence"><span class="proof-evidence-label">Contributed to business results</span><div class="proof-metrics"><div class="proof-metric"><strong>280%</strong><span>Customer-acquisition growth</span></div><div class="proof-metric"><strong>11%</strong><span>Conversion improvement</span></div></div></div>
+</article>
+<article>
+<span class="proof-tag">Industrial automation · Technical-commercial transformation</span>
+<h3>Turning complex opportunities into coordinated execution.</h3>
+<p class="proof-detail">Connected engineering, applications, commercial teams, and enterprise customers to translate automation requirements into technical solutions, business cases, and actionable proposals. Standardized proposal processes to improve cross-functional responsiveness.</p>
+<div class="proof-evidence"><span class="proof-evidence-label">Results</span><div class="proof-metrics"><div class="proof-metric"><strong>$10M+</strong><span>Enterprise automation opportunities developed</span></div><div class="proof-metric"><strong>50%</strong><span>Improvement in RFQ response efficiency</span></div></div></div>
+</article>
+<article>
+<span class="proof-tag">Commercial leadership · Industrial technology &amp; construction</span>
+<h3>Building the teams and systems that deliver growth.</h3>
+<p class="proof-detail">Led regional commercial growth across additive manufacturing and construction technology through sales leadership, territory development, channel execution, and performance management. Built repeatable disciplines around pipeline visibility, account prioritization, and team accountability.</p>
+<div class="proof-evidence"><span class="proof-evidence-label">Results</span><div class="proof-metrics"><div class="proof-metric"><strong>$100K → $3.3M</strong><span>Midwest book-of-business growth</span></div><div class="proof-metric"><strong>112%</strong><span>Regional sales growth, reaching $5.4M</span></div></div></div>
+</article>
+</div><p class="proof-note">Selected examples from prior operating roles. Results reflect work performed within those organizations. Operating-model design and commercial performance outcomes represent distinct workstreams.</p>
 </div></section>
 
 <section class="sec"><div class="w">
