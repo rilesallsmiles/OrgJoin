@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="How Organizational Joinery diagnoses broken operating interfaces, designs minimum viable mechanisms, and installs systems that teams can run themselves.">
+<meta name="theme-color" content="#123C3F">
+<title>Our Approach | Organizational Joinery</title>
+<link rel="icon" href="/orgjoints-assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/orgjoints-assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/orgjoints-assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B2A2C;--navy:#123C3F;--copper:#A5622A;--copper-light:#E3A870;--mist:#F4EFE7;--line:#DDD5C8;--mute:#566868;--text:#1B2B2C}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:white;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}.w{max-width:1160px;margin:auto;padding:0 32px}h1,h2,h3{color:var(--ink);line-height:1.12;letter-spacing:-.035em;font-weight:600;margin:0}p{margin:0}
+nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}nav .w{height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.mark{display:inline-flex;align-items:center;gap:12px;font-size:17px;font-weight:700;letter-spacing:-.025em;text-decoration:none;color:var(--ink);white-space:nowrap}.mark img{width:39px;height:43px;object-fit:contain}
+.links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:500}.links a{text-decoration:none;color:var(--mute)}.links a:hover,.links a[aria-current]{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--copper);color:white!important;border-radius:3px;text-decoration:none;font-size:14px;font-weight:600}.btn:hover{background:#8A511F}.btn.outline{background:transparent;color:var(--ink)!important;box-shadow:inset 0 0 0 1px #CBBFAE}.btn.outline:hover{background:var(--mist)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:20px}.hero{padding:105px 0 104px}.hero h1{font-size:clamp(44px,6vw,76px);max-width:980px}.hero h1 em{font-style:normal;color:var(--copper)}.lead{font-size:20px;color:var(--mute);max-width:750px;margin-top:30px;line-height:1.55}.section{padding:100px 0}.section h2{font-size:clamp(31px,4vw,49px);max-width:850px;margin-bottom:30px}.intro{font-size:19px;color:var(--mute);max-width:780px;margin-bottom:52px}
+.dark{background:var(--navy);color:white}.dark h2,.dark h3{color:white}.dark .eyebrow{color:var(--copper-light)}.dark .intro{color:#B7CCCA}
+.joint{height:28px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='28'%3E%3Cpath d='M0 4H56.75L46.1 24H93.9L83.25 4H140V28H0Z' fill='%23123C3F'/%3E%3C/svg%3E") repeat-x center/140px 28px}
+.joint.up{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='28'%3E%3Cpath d='M0 0H140V4H83.25L93.9 24H46.1L56.75 4H0Z' fill='%23123C3F'/%3E%3C/svg%3E") repeat-x center/140px 28px}
+.thesis{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.thesis .quote{font-size:clamp(27px,3.3vw,42px);font-weight:600;letter-spacing:-.035em;line-height:1.24;color:white}.thesis p{font-size:17px;color:#B7CCCA;margin-bottom:20px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}.step{border-top:2px solid var(--copper);padding-top:23px}.step .num{display:block;font-size:13px;color:var(--copper);font-weight:700;letter-spacing:.1em;margin-bottom:40px}.step h3{font-size:29px;margin-bottom:20px}.step p{font-size:16px;color:var(--mute);margin-bottom:20px}.step ul{padding-left:18px;margin:0;color:var(--text);font-size:14px}.step li{margin:8px 0}
+.principles{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}.principle{border-top:1px solid #3F6E71;padding-top:25px}.principle .num{font-size:12px;color:var(--copper-light);font-weight:600;letter-spacing:.1em}.principle h3{font-size:25px;margin:12px 0}.principle p{color:#B7CCCA;font-size:16px;max-width:470px}
+.outcomes{background:var(--mist)}.outcome-list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}.outcome{padding:22px 0;border-top:1px solid var(--line);font-size:17px;font-weight:500;color:var(--ink)}
+.close{padding:96px 0;background:var(--navy);color:white}.close h2{font-size:clamp(34px,4.5vw,58px);color:white;max-width:780px;margin-bottom:25px}.close p{color:#B7CCCA;font-size:18px;max-width:690px;margin-bottom:30px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+footer{background:var(--ink);color:#8FA9A8;font-size:13px;padding:25px 0}footer .w{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+@media(max-width:850px){.thesis,.steps,.principles{grid-template-columns:1fr}.thesis{gap:28px}.step .num{margin-bottom:16px}.steps{gap:45px}.section{padding:72px 0}.hero{padding:70px 0}.links a:not(.btn){display:none}}
+@media(max-width:580px){.w{padding:0 22px}.mark{font-size:14px;gap:7px}.mark img{width:31px;height:35px}.links{gap:0}.links .btn{padding:0 12px;min-height:40px;font-size:12px}.outcome-list{grid-template-columns:1fr}.hero h1{font-size:43px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="mark" href="/" aria-label="Organizational Joinery home"><img src="/orgjoints-assets/oj-icon.png" alt="">Organizational Joinery</a><div class="links"><a href="/">Home</a><a href="/approach/" aria-current="page">Approach</a><a class="btn" href="https://calendar.app.google/88qgASWvxANzVyuz6" target="_blank" rel="noopener">Book a call</a></div></div></nav>
+<main>
+<header class="hero"><div class="w"><p class="eyebrow">Our approach</p><h1>Fix the interfaces.<br><em>Keep the momentum.</em></h1><p class="lead">Growing companies rarely fail for lack of talented people. Execution breaks where teams, decisions, systems, and accountability meet. We find those seams, design the right connections, and help make them work in practice.</p></div></header>
+<div class="joint" aria-hidden="true"></div>
+<section class="section dark"><div class="w thesis"><div><p class="eyebrow">The operating premise</p><p class="quote">The goal is not more structure. It is less friction between the parts that already exist.</p></div><div><p>As organizations grow, informal coordination stops scaling. Decisions travel upward, ownership becomes ambiguous, and leaders become the connection between functions that should work together directly.</p><p>Adding meetings, policies, or another tool can make the problem worse. The useful question is: <strong>which connection is failing, and what is the smallest durable mechanism that will repair it?</strong></p><p>That is where Organizational Joinery begins.</p></div></div></section>
+<div class="joint up" aria-hidden="true"></div>
+<section class="section" id="method"><div class="w"><p class="eyebrow">The method</p><h2>Diagnose. Design. Install.</h2><p class="intro">Three connected stages, with the work grounded in how the organization actually operates—not how its org chart says it should.</p><div class="steps">
+<article class="step"><span class="num">01 / DIAGNOSE</span><h3>See the seams.</h3><p>Trace real work and decisions across functional boundaries. Find where people are compensating for unclear interfaces.</p><ul><li>Interview the people doing and routing the work</li><li>Follow decisions, handoffs, and escalations</li><li>Separate symptoms from structural causes</li><li>Identify the few constraints that matter most</li></ul></article>
+<article class="step"><span class="num">02 / DESIGN</span><h3>Build the joint.</h3><p>Translate what we learn into practical operating mechanisms, proportionate to the company's stage and complexity.</p><ul><li>Clarify ownership and decision authority</li><li>Define cross-functional interfaces and escalation rules</li><li>Align workflows, information, and operating cadence</li><li>Fit the mechanism to tools already in use</li></ul></article>
+<article class="step"><span class="num">03 / INSTALL</span><h3>Make it hold.</h3><p>Work alongside the team to test the mechanism in real conditions, adjust what fails, and transfer ownership.</p><ul><li>Test with real scenarios and edge cases</li><li>Support implementation and adoption</li><li>Document the decisions and operating rules</li><li>Hand off a system the team can run independently</li></ul></article>
+</div></div></section>
+<section class="section dark"><div class="w"><p class="eyebrow">Design principles</p><h2>Enough structure to scale.<br>Not enough to slow you down.</h2><div class="principles">
+<article class="principle"><span class="num">01</span><h3>Decisions before boxes.</h3><p>Start with what must be decided, by whom, and under what conditions. Reporting lines alone do not define effective authority.</p></article>
+<article class="principle"><span class="num">02</span><h3>Make interfaces explicit.</h3><p>Accountability, consultation, handoffs, and escalation should be visible where functions meet—not left to personal relationships.</p></article>
+<article class="principle"><span class="num">03</span><h3>Use the systems you have.</h3><p>Prefer improvements that live in existing workflows and platforms. A new tool is not the default answer.</p></article>
+<article class="principle"><span class="num">04</span><h3>Design for independence.</h3><p>A good operating mechanism survives changes in people, reporting lines, and growth. It should not require its designer to remain in the room.</p></article>
+</div></div></section>
+<section class="section outcomes"><div class="w"><p class="eyebrow">What changes</p><h2>Clarity people can operate with.</h2><p class="intro">The deliverable is not a deck. It is a better way for the organization to make decisions and move work.</p><div class="outcome-list"><div class="outcome">Decisions made closer to the work</div><div class="outcome">Clearer ownership across functions</div><div class="outcome">Fewer avoidable escalations</div><div class="outcome">More predictable handoffs</div><div class="outcome">Management cadence that supports execution</div><div class="outcome">Mechanisms that endure beyond the engagement</div></div></div></section>
+<section class="close"><div class="w"><p class="eyebrow" style="color:#E3A870">Start with the seam</p><h2>Where is execution getting stuck?</h2><p>We can start with a specific decision, a recurring handoff, or a broader operating problem. The first step is understanding where coordination has become harder than it needs to be.</p><div class="cta"><a class="btn" href="https://calendar.app.google/88qgASWvxANzVyuz6" target="_blank" rel="noopener">Book a call</a><a class="btn outline" style="color:white!important;box-shadow:inset 0 0 0 1px #4F7B7E" href="mailto:hello@orgjoints.com">Email Organizational Joinery</a></div></div></section>
+</main>
+<footer><div class="w"><span>© Organizational Joinery LLC 2026</span><span>Making the parts work as a system.</span></div></footer>
+</body></html>
